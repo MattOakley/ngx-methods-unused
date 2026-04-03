@@ -5,15 +5,15 @@ import { MethodResult } from './types.js';
 export const CLI_DECORATOR = '[ngx-unused]';
 
 export function usage() {
-  stdout.write('ngx-unused <directory> -p <tsconfig-file>\n');
+  stdout.write('ngx-unused-methods <directory> -p <tsconfig-file>\n');
   stdout.write('Invoke ngx-unused --help for more details\n');
 }
 
 export function help() {
-  stdout.write(`ngx-unused - find unused classes in Angular codebase
+  stdout.write(`ngx-unused-methods - find unused methods in Angular codebase
 
 
-	\rUsage: ngx-unused <directory> [-p | --project] <tsconfig-file>
+	\rUsage: ngx-unused-methods <directory> [-p | --project] <tsconfig-file>
 	
 	\r<directory>     - directory to be scanned
 	\r                  to scan multiple directories pass names separated by space
@@ -29,8 +29,8 @@ Options:
 Source root directories and tsconfig file must be under the same root directory.
 
 Examples:
-ngx-unused . -p tsconfig.base.json
-ngx-unused libs apps/my-app -p tsconfig.base.json
+ngx-unused-methods . -p tsconfig.base.json
+ngx-unused-methods  libs apps/my-app -p tsconfig.base.json
 `);
 }
 
