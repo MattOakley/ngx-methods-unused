@@ -1,0 +1,55 @@
+{
+  "name": "ngx-methods-unused",
+  "version": "0.0.0",
+  "description": "Detect unused methods in typescript projects",
+  "bugs": {
+    "url": ""
+  },
+  "main": "./bin/cli.js",
+  "bin": "./bin/cli.js",
+  "type": "module",
+  "keywords": [
+    "angular",
+    "typescript",
+    "ngx",
+    "unused code",
+    "unused angular methods",
+    "unused typescript methods",
+    "unused methods"
+  ],
+  "dependencies": {
+    "glob": "^10.3.10",
+    "minimist": "^1.2.8",
+    "ts-morph": "^21.0.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^15.12.5",
+    "@typescript-eslint/eslint-plugin": "^6.7.5",
+    "@typescript-eslint/parser": "^6.7.5",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.51.0",
+    "eslint-config-prettier": "^9.0.0",
+    "jest": "^30.3.0",
+    "lint-staged": "^15.2.9",
+    "prettier": "^2.8.8",
+    "prettier-plugin-organize-imports": "^2.2.0",
+    "ts-jest": "^29.4.9",
+    "tsc": "^2.0.4",
+    "typescript": "^6.0.2"
+  },
+  "scripts": {
+    "start": "tsc -p tsconfig.json --watch",
+    "build": "tsc -p tsconfig.json",
+    "prepareOnly": "tsc -p tsconfig.json --removeComments",
+    "format": "prettier --write .",
+    "test": "jest"
+  },
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wgrabowski/ngx-methods-unused.git"
+  },
+  "config": {}
+}

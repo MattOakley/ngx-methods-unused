@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "rootDir": "lib",
+    "target": "ES6",
+    "module": "node16",
+    "strict": true,
+    "types": ["node", "jest"],
+    "lib": ["ES2019"],
+    "esModuleInterop": true,
+    "moduleResolution": "node16",
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "dist"
+  },
+  "include": ["lib/**/*.ts"]
+}
